@@ -16,13 +16,22 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 
 ## Detalhes Gerais
 
-- **Versão**: < `número da tag` >
-- **Conceito aplicado:** < `nome do conceito` >
+- **Versão**: 0.1
+- **Conceito aplicado:** Solução Procedural
 
 ## Descrição da Versão
 
 ```bash
-< descricao detalhada da versao >
+
+Primeira versao do projeto.
+
+Implementacao direta e totalmente procedural,
+sem uso de classes ou metodos.
+
+O objetivo principal desta versao e estabelecer
+a base logica do problema antes da introducao
+de conceitos de orientacao a objetos.
+
 ```
 
 ## Exemplo(s) de Execução
