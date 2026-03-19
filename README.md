@@ -36,6 +36,8 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
    |- Img/
       |- Menu.png
       |- ProblemSolution.png
+   |- Src/
+      |- Triangle.cs
    |- Program.cs
    |- ProgramExamples.cs
    |- Project.csproj
@@ -48,9 +50,11 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 ## Evolução
 
 - [**v0.1**][1] — Solução procedural
+- [**v0.2**][2] — Introdução da classe Triangle
 
 ## Objetivo Educacional
 
 Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
 
 [1]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.1/Project "v0.1"
+[2]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.2/Project "v0.2"
