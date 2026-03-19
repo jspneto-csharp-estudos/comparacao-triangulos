@@ -16,21 +16,25 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.1
-- **Conceito aplicado:** Solução Procedural
+- **Versão**: 0.2
+- **Conceito aplicado:** Classes e Métodos
 
 ## Descrição da Versão
 
 ```bash
 
-Primeira versao do projeto.
+Evolucao do modelo procedural para
+orientacao a objetos.
 
-Implementacao direta e totalmente procedural,
-sem uso de classes ou metodos.
+A classe Triangule passa a concentrar
+os atributos dos lados e o metodo
+de calculo da area utilizando a
+formula de Heron.
 
-O objetivo principal desta versao e estabelecer
-a base logica do problema antes da introducao
-de conceitos de orientacao a objetos.
+O programa principal agora instancia
+objetos e delega o calculo a classe,
+iniciando o processo de modelagem
+de entidades.
 
 ```
 
