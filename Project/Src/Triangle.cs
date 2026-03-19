@@ -4,28 +4,72 @@ namespace Project.Src;
 
 class Triangle
 {
-    public string Name;
-    public double S1;
-    public double S2;
-    public double S3;
+    private string _name;
+    private double _s1;
+    private double _s2;
+    private double _s3;
 
     public Triangle(string name, double s1, double s2, double s3)
     {
         if (name != null && name.Length == 3)
         {
-            Name = name;
+            _name = name;
         }
         else
         {
-            Name = "ABC";
+            _name = "ABC";
         }
 
-        S1 = s1;
-        S2 = s2;
-        S3 = s3;
+        _s1 = s1;
+        _s2 = s2;
+        _s3 = s3;
     }
 
     public Triangle(string name) : this(name, 3.0, 4.0, 5.0) {}
+
+    public string Name
+    {
+        get
+        {
+            return _name;
+        }
+
+        set
+        {
+            if (value != null && value.Length == 3)
+            {
+                _name = value;
+            }
+            else
+            {
+                _name = "ABC";
+            }
+        }
+    }
+
+    public double S1
+    {
+        get
+        {
+            return _s1;
+        }
+    }
+
+    public double S2
+    {
+        get
+        {
+            return _s2;
+        }
+    }
+
+    public double S3
+    {
+        get
+        {
+            return _s3;
+        }
+    }
 
     public double Area()
     {
