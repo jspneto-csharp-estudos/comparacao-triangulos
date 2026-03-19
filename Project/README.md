@@ -16,20 +16,24 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.5
-- **Conceito aplicado:** Sobrecarga (Overload)
+- **Versão**: 0.6
+- **Conceito aplicado:** Encapsulamento
 
 ## Descrição da Versão
 
 ```bash
 
-Introduz o conceito de sobrecarga.
+Evolucao do modelo da classe Triangle
+com aplicacao de encapsulamento.
 
-Permite a criacao de um triangulo
-informando apenas o nome, utilizando
-valores padrao para os lados e
-delegando a construcao ao construtor
-principal por meio de encadeamento.
+Os atributos passam a ser privados e
+expostos por meio de properties,
+permitindo controle de acesso e
+validacao no setter do Name.
+
+Os lados tornam-se somente leitura,
+garantindo maior consistencia do objeto
+apos a instanciacao.
 
 ```
 
@@ -48,3 +52,7 @@ principal por meio de encadeamento.
 (Exemplo de Overload)
 
 <img src="Img/Overload.png" alt="Overload" width="936">
+
+(Exemplo de Encapsulamento)
+
+<img src="Img/Encapsulation.png" alt="Encapsulation" width="936">
