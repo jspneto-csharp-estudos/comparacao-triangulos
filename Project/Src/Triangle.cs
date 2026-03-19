@@ -25,6 +25,8 @@ class Triangle
         S3 = s3;
     }
 
+    public Triangle(string name) : this(name, 3.0, 4.0, 5.0) {}
+
     public double Area()
     {
         double p = (S1 + S2 + S3) / 2.0;
