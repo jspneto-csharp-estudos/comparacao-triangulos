@@ -63,6 +63,23 @@ static class ProgramExamples
         OutgoingMessage();
     }
 
+    public static void Encapsulation()
+    {
+        Console.WriteLine("Exemplo de uso de Encapsulamento:");
+
+        Console.WriteLine();
+        Console.WriteLine("Entre com os dados do triângulo:");
+        Triangle t = TriangleInputs.CreateTriangle();
+        Console.WriteLine(t.ToString());
+
+        Console.WriteLine();
+        Console.Write("Entre com um novo nome para o triângulo: ");
+        t.Name = Console.ReadLine()!;
+        Console.WriteLine(t.ToString());
+
+        OutgoingMessage();
+    }
+
     private static void OutgoingMessage()
     {
         Console.WriteLine();
