@@ -35,6 +35,7 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 |- Project/
    |- Img/
       |- Menu.png
+      |- Overload.png
       |- Override.png
       |- ProblemSolution.png
    |- Src/
@@ -59,6 +60,7 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
   - [**v0.2**][2] — Introdução da classe Triangle
   - [**v0.3**][4] — Override de ToString na classe Triangle
   - [**v0.4**][5] — Adiciona construtor com validação de nome
+  - [**v0.5**][6] — Adiciona sobrecarga de construtor
 
 - **Estrutural:**
   - [**v0.2.1**][3] — Separa IO e utils e limpa o entrypoint
@@ -72,3 +74,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [3]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.2.1/Project "v0.2.1"
 [4]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.3/Project "v0.3"
 [5]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.4/Project "v0.4"
+[6]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.5/Project "v0.5"
