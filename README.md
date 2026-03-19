@@ -15,18 +15,18 @@ Este projeto foi desenvolvido de forma incremental, registrando a evolução do 
 
 ## Enunciado
 
-Ler as medidas dos lados de dois triângulos (X e Y), considerando medidas válidas.
+Ler as medidas dos lados de dois triângulos, considerando medidas válidas.
 
 Em seguida:
 - Calcular a área de cada triângulo
 - Exibir os valores das áreas
 - Informar qual triângulo possui a maior área
 
-A área de um triângulo com lados `a`, `b` e `c` é calculada pela **fórmula de Heron**:
+A área de um triângulo com lados `S1`, `S2` e `S3` é calculada pela **fórmula de Heron**:
 
 ```bash
-p = (a + b + c) / 2
-area = RaizQ(p * (p - a) * (p - b) * (p - c))
+p = (S1 + S2 + S3) / 2
+area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 ```
 
 ## Estrutura
