@@ -5,9 +5,9 @@ namespace Project.Src;
 class Triangle
 {
     private string _name;
-    private double _s1;
-    private double _s2;
-    private double _s3;
+    public double S1 { get; private set; }
+    public double S2 { get; private set; }
+    public double S3 { get; private set; }
 
     public Triangle(string name, double s1, double s2, double s3)
     {
@@ -20,9 +20,9 @@ class Triangle
             _name = "ABC";
         }
 
-        _s1 = s1;
-        _s2 = s2;
-        _s3 = s3;
+        S1 = s1;
+        S2 = s2;
+        S3 = s3;
     }
 
     public Triangle(string name) : this(name, 3.0, 4.0, 5.0) {}
@@ -44,30 +44,6 @@ class Triangle
             {
                 _name = "ABC";
             }
-        }
-    }
-
-    public double S1
-    {
-        get
-        {
-            return _s1;
-        }
-    }
-
-    public double S2
-    {
-        get
-        {
-            return _s2;
-        }
-    }
-
-    public double S3
-    {
-        get
-        {
-            return _s3;
         }
     }
 
