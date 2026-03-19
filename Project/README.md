@@ -16,22 +16,20 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.4
-- **Conceito aplicado:** Construtores
+- **Versão**: 0.5
+- **Conceito aplicado:** Sobrecarga (Overload)
 
 ## Descrição da Versão
 
 ```bash
 
-Evolucao do modelo de instanciacao da classe.
+Introduz o conceito de sobrecarga.
 
-A criacao do objeto passa a exigir
-parametros no construtor, garantindo
-que todo triangulo possua um nome
-valido no momento da instanciacao.
-
-O metodo CreateTriangle foi atualizado
-para utilizar o novo construtor.
+Permite a criacao de um triangulo
+informando apenas o nome, utilizando
+valores padrao para os lados e
+delegando a construcao ao construtor
+principal por meio de encadeamento.
 
 ```
 
@@ -46,3 +44,7 @@ para utilizar o novo construtor.
 (Exemplo de Override)
 
 <img src="Img/Override.png" alt="Override" width="936">
+
+(Exemplo de Overload)
+
+<img src="Img/Overload.png" alt="Overload" width="936">
