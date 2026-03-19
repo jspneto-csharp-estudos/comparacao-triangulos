@@ -1,4 +1,5 @@
 using System.Globalization;
+using Project.Src;
 
 namespace Project;
 
@@ -6,29 +7,31 @@ static class ProgramExamples
 {
     public static void ProblemSolution()
     {
-        Console.WriteLine("Entre com as medidas do triângulo X:");
-        double xA = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        double xB = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        double xC = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Triangle t1 = new();
+        Triangle t2 = new();
+        
+        Console.WriteLine("Entre com os dados do 1º triângulo:");
+        t1.Name = Console.ReadLine()!;
+        t1.S1 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        t1.S2 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        t1.S3 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
 
         Console.WriteLine();
-        Console.WriteLine("Entre com as medidas do triângulo Y:");
-        double yA = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        double yB = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        double yC = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.WriteLine("Entre com os dados do 2º triângulo:");
+        t2.Name = Console.ReadLine()!;
+        t2.S1 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        t2.S2 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        t2.S3 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
 
-        double xP = (xA + xB + xC) / 2.0;
-        double yP = (yA + yB + yC) / 2.0;
-
-        double xArea = Math.Sqrt(xP * (xP - xA) * (xP - xB ) * (xP - xC));
-        double yArea = Math.Sqrt(yP * (yP - yA) * (yP - yB ) * (yP - yC));
+        double areaT1 = t1.Area();
+        double areaT2 = t2.Area();
 
         Console.WriteLine();
-        Console.WriteLine("Área de X: " + xArea.ToString("F4", CultureInfo.InvariantCulture));
-        Console.WriteLine("Área de Y: " + yArea.ToString("F4", CultureInfo.InvariantCulture));
+        Console.WriteLine("Área de X: " + areaT1.ToString("F4", CultureInfo.InvariantCulture));
+        Console.WriteLine("Área de Y: " + areaT2.ToString("F4", CultureInfo.InvariantCulture));
         Console.Write("Maior área: ");
 
-        if (xArea >= yArea)
+        if (areaT1 >= areaT2)
         {
             Console.WriteLine("X");
         }
