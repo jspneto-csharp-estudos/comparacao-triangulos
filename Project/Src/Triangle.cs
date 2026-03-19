@@ -4,10 +4,26 @@ namespace Project.Src;
 
 class Triangle
 {
-    public string Name = "ABC";
+    public string Name;
     public double S1;
     public double S2;
     public double S3;
+
+    public Triangle(string name, double s1, double s2, double s3)
+    {
+        if (name != null && name.Length == 3)
+        {
+            Name = name;
+        }
+        else
+        {
+            Name = "ABC";
+        }
+
+        S1 = s1;
+        S2 = s2;
+        S3 = s3;
+    }
 
     public double Area()
     {
