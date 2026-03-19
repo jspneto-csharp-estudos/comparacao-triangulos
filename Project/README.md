@@ -16,22 +16,18 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.2.1
-- **Conceito aplicado:** Refatoração de Código
+- **Versão**: 0.3
+- **Conceito aplicado:** Sobrescrita (Override)
 
 ## Descrição da Versão
 
 ```bash
 
-Refatoracao estrutural para melhorar a
-organizacao do codigo.
+Introduz representacao textual da entidade.
 
-Metodos de entrada e saida foram movidos
-para classes dedicadas (TriangleInputs e
-TriangleOutputs) dentro de Src/IO, e a
-comparacao de areas foi centralizada em
-TrianguleUtils, deixando o programa
-principal mais enxuto e didatico.
+A classe passa a sobrescrever o metodo
+ToString para exibir seus atributos e
+a area calculada.
 
 ```
 
@@ -42,3 +38,7 @@ principal mais enxuto e didatico.
 (Solução do Problema)
 
 <img src="Img/ProblemSolution.png" alt="ProblemSolution" width="936">
+
+(Exemplo de Override)
+
+<img src="Img/Override.png" alt="Override" width="936">
