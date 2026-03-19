@@ -37,7 +37,11 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
       |- Menu.png
       |- ProblemSolution.png
    |- Src/
+      |- IO/
+         |- TriangleInputs.cs
+         |- TriangleOutputs.cs
       |- Triangle.cs
+      |- TriangleUtils.cs
    |- Program.cs
    |- ProgramExamples.cs
    |- Project.csproj
@@ -49,8 +53,12 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Evolução
 
-- [**v0.1**][1] — Solução procedural
-- [**v0.2**][2] — Introdução da classe Triangle
+- **Conceitual:**
+  - [**v0.1**][1] — Solução procedural
+  - [**v0.2**][2] — Introdução da classe Triangle
+
+- **Estrutural:**
+  - [**v0.2.1**][3] — Separa IO e utils e limpa o entrypoint
 
 ## Objetivo Educacional
 
@@ -58,3 +66,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 
 [1]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.1/Project "v0.1"
 [2]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.2/Project "v0.2"
+[3]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.2.1/Project "v0.2.1"
