@@ -1,3 +1,4 @@
+using System.Globalization;
 using Project.Src;
 using Project.Src.IO;
 
@@ -34,6 +35,30 @@ static class ProgramExamples
 
         Console.WriteLine();
         Console.WriteLine(t.ToString());
+
+        OutgoingMessage();
+    }
+
+    public static void Overload()
+    {
+        Console.WriteLine("Exemplo de uso de Sobrecarga (Overload): ");
+
+        Console.WriteLine();
+        Console.WriteLine("Entre com os dados do triângulo:");
+        string name = Console.ReadLine()!;
+        double s1 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        double s2 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        double s3 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+
+        Console.WriteLine();
+        Console.WriteLine("Criando 1º triângulo... (Utiliza construtor completo)");
+        Triangle t1 = new(name, s1, s2, s3);
+        Console.WriteLine("Criando 2º triângulo... (Utiliza construtor parcial)");
+        Triangle t2 = new(name);
+
+        Console.WriteLine();
+        Console.WriteLine(t1.ToString());
+        Console.WriteLine(t2.ToString());
 
         OutgoingMessage();
     }
