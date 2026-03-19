@@ -17,6 +17,7 @@ class Program
             Console.WriteLine("   1 — Solução do Problema");
             Console.WriteLine("   2 — Override");
             Console.WriteLine("   3 — Overload");
+            Console.WriteLine("   4 — Encapsulamento");
             Console.WriteLine();
             Console.Write("Digite o número do exemplo que deseja executar ou tecle ENTER para sair: ");
             string? escolha = Console.ReadLine();
@@ -38,6 +39,9 @@ class Program
                         break;
                     case "3":
                         ProgramExamples.Overload();
+                        break;
+                    case "4":
+                        ProgramExamples.Encapsulation();
                         break;
                     default:
                         continue;
