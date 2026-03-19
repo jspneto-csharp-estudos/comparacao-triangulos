@@ -24,6 +24,20 @@ static class ProgramExamples
         OutgoingMessage();
     }
 
+    public static void Override()
+    {
+        Console.WriteLine("Exemplo de uso de Sobrescrita (Override)");
+        
+        Console.WriteLine();
+        Console.WriteLine("Entre com os dados do triângulo:");
+        Triangle t = TriangleInputs.CreateTriangle();
+
+        Console.WriteLine();
+        Console.WriteLine(t.ToString());
+
+        OutgoingMessage();
+    }
+
     private static void OutgoingMessage()
     {
         Console.WriteLine();
