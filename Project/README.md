@@ -16,18 +16,22 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.3
-- **Conceito aplicado:** Sobrescrita (Override)
+- **Versão**: 0.4
+- **Conceito aplicado:** Construtores
 
 ## Descrição da Versão
 
 ```bash
 
-Introduz representacao textual da entidade.
+Evolucao do modelo de instanciacao da classe.
 
-A classe passa a sobrescrever o metodo
-ToString para exibir seus atributos e
-a area calculada.
+A criacao do objeto passa a exigir
+parametros no construtor, garantindo
+que todo triangulo possua um nome
+valido no momento da instanciacao.
+
+O metodo CreateTriangle foi atualizado
+para utilizar o novo construtor.
 
 ```
 
