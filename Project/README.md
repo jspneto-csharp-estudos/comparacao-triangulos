@@ -16,24 +16,20 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.6
-- **Conceito aplicado:** Encapsulamento
+- **Versão**: 0.6.1
+- **Conceito aplicado:** Refatoração de Código
 
 ## Descrição da Versão
 
 ```bash
 
-Evolucao do modelo da classe Triangle
-com aplicacao de encapsulamento.
+Refatoracao interna da classe.
 
-Os atributos passam a ser privados e
-expostos por meio de properties,
-permitindo controle de acesso e
-validacao no setter do Name.
-
-Os lados tornam-se somente leitura,
-garantindo maior consistencia do objeto
-apos a instanciacao.
+Substitui a implementacao manual das
+properties por auto-properties com
+setter privado, simplificando o codigo
+sem alterar o comportamento externo
+da classe.
 
 ```
 
