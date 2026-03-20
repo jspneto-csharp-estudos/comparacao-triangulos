@@ -16,22 +16,25 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.7.1
+- **Versão**: 0.7.2
 - **Conceito aplicado:** Refatoração de Código
 
 ## Descrição da Versão
 
 ```bash
 
-Refatoracao da regra de validacao do atributo Name.
+Refatoracao dos metodos de verificacao e validacao.
 
-O construtor passa a aplicar fallback automatico
-para nome generico apenas durante a criacao
-do objeto, enquanto o setter ignora valores
-invalidos, preservando o estado atual.
+Todos os metodos que utilizavam controle de fluxo para
+verificar propriedades ou validar atributos foram
+atualizados para usar operadores ternarios ou
+retornar diretamente o resultado da operacao logica.
 
-A validacao foi isolada no metodo NameIsValid,
-eliminando efeitos colaterais indesejados.
+Um nome que seja apenas uma sequencia de tres espacos
+em branco passa a ser considerado invalido.
+
+O construtor de Triangle passa a usar um operador
+ternario para aplicar um nome valido.
 
 ```
 
