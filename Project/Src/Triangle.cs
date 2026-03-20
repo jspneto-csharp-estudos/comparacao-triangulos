@@ -11,18 +11,17 @@ class Triangle
 
     public Triangle(string name, double s1, double s2, double s3)
     {
-        if (name != null && name.Length == 3)
-        {
-            _name = name;
-        }
-        else
-        {
-            _name = "ABC";
-        }
+        _name = ValidateName(name);
+        S1 = ValidateSide(s1);
+        S2 = ValidateSide(s2);
+        S3 = ValidateSide(s3);
 
-        S1 = s1;
-        S2 = s2;
-        S3 = s3;
+        if (!TriangleInequality(S1, S2, S3))
+        {
+            S1 = 3.0;
+            S2 = 4.0;
+            S3 = 5.0;
+        }
     }
 
     public Triangle(string name) : this(name, 3.0, 4.0, 5.0) {}
@@ -36,14 +35,43 @@ class Triangle
 
         set
         {
-            if (value != null && value.Length == 3)
-            {
-                _name = value;
-            }
-            else
-            {
-                _name = "ABC";
-            }
+            _name = ValidateName(value);
+        }
+    }
+
+    private static string ValidateName(string name)
+    {
+        if (name != null && name.Length == 3)
+        {
+            return name;
+        }
+        else
+        {
+            return "ABC";
+        }
+    }
+
+    private static double ValidateSide(double length)
+    {
+        if (length >= 0.0)
+        {
+            return length;
+        }
+        else
+        {
+            return 1.0;
+        }
+    }
+
+    private static bool TriangleInequality(double s1, double s2, double s3)
+    {
+        if (s1 < s2 + s3 && s2 < s1 + s3 && s3 < s1 + s2)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
