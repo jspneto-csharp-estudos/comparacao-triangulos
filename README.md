@@ -43,6 +43,9 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
       |- IO/
          |- TriangleInputs.cs
          |- TriangleOutputs.cs
+      |- Utils/
+         |- ParsingUtils.cs
+         |- TriangleUtils.cs
       |- Triangle.cs
       |- TriangleUtils.cs
    |- Program.cs
@@ -64,6 +67,7 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
   - [**v0.5**][6] — Adiciona sobrecarga de construtor
   - [**v0.6**][7] — Encapsulamento com properties
   - [**v0.7**][9] — Validação geométrica no construtor
+  - [**v0.8**][12] — Introdução de nullable types na entrada de dados
 
 - **Estrutural:**
   - [**v0.2.1**][3] — Separa IO e utils e limpa o entrypoint
@@ -86,3 +90,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [9]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.7/Project "v0.7"
 [10]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.7.1/Project "v0.7.1"
 [11]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.7.2/Project "v0.7.2"
+[12]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.8/Project "v0.8"
