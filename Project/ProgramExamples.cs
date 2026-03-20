@@ -1,4 +1,3 @@
-using System.Globalization;
 using Project.Src;
 using Project.Src.IO;
 using Project.Src.Utils;
@@ -46,13 +45,16 @@ static class ProgramExamples
 
         Console.WriteLine();
         Console.WriteLine("Entre com os dados do triângulo:");
-        string name = Console.ReadLine()!;
-        double s1 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        double s2 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        double s3 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        string? name = Console.ReadLine();
+        string? s1StringValue = Console.ReadLine();
+        string? s2StringValue = Console.ReadLine();
+        string? s3StringValue = Console.ReadLine();
 
         Console.WriteLine();
         Console.WriteLine("Criando 1º triângulo... (Utiliza construtor completo)");
+        double? s1 = ParsingUtils.ParseDoubleOrNull(s1StringValue);
+        double? s2 = ParsingUtils.ParseDoubleOrNull(s2StringValue);
+        double? s3 = ParsingUtils.ParseDoubleOrNull(s3StringValue);
         Triangle t1 = new(name, s1, s2, s3);
         Console.WriteLine("Criando 2º triângulo... (Utiliza construtor parcial)");
         Triangle t2 = new(name);
@@ -75,7 +77,7 @@ static class ProgramExamples
 
         Console.WriteLine();
         Console.Write("Entre com um novo nome para o triângulo: ");
-        t.Name = Console.ReadLine()!;
+        t.Name = Console.ReadLine();
         Console.WriteLine(t.ToString());
 
         OutgoingMessage();
