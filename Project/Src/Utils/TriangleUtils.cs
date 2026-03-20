@@ -1,4 +1,4 @@
-namespace Project.Src;
+namespace Project.Src.Utils;
 
 static class TriangleUtils
 {
