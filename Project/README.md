@@ -16,23 +16,22 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.7
-- **Conceito aplicado:** Validação de Atributos
+- **Versão**: 0.7.1
+- **Conceito aplicado:** Refatoração de Código
 
 ## Descrição da Versão
 
 ```bash
 
-Evolucao da modelagem da entidade Triangle.
+Refatoracao da regra de validacao do atributo Name.
 
-O construtor passa a validar nao apenas
-a positividade dos lados, mas tambem a
-desigualdade triangular, garantindo que
-todo objeto represente um triangulo
-geometricamente valido.
+O construtor passa a aplicar fallback automatico
+para nome generico apenas durante a criacao
+do objeto, enquanto o setter ignora valores
+invalidos, preservando o estado atual.
 
-Em caso de inconsistencias, aplica
-medidas padrao como fallback.
+A validacao foi isolada no metodo NameIsValid,
+eliminando efeitos colaterais indesejados.
 
 ```
 
