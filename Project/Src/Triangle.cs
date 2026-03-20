@@ -9,9 +9,9 @@ class Triangle
     public double S2 { get; private set; }
     public double S3 { get; private set; }
 
-    public Triangle(string name, double s1, double s2, double s3)
+    public Triangle(string? name, double? s1, double? s2, double? s3)
     {
-        _name = NameIsValid(name) ? name : "ABC";
+        _name = NameIsValid(name) ? name! : "ABC";
         S1 = ValidateSide(s1);
         S2 = ValidateSide(s2);
         S3 = ValidateSide(s3);
@@ -24,9 +24,9 @@ class Triangle
         }        
     }
 
-    public Triangle(string name) : this(name, 3.0, 4.0, 5.0) {}
+    public Triangle(string? name) : this(name, 3.0, 4.0, 5.0) {}
 
-    public string Name
+    public string? Name
     {
         get
         {
@@ -37,17 +37,17 @@ class Triangle
         {
             if (NameIsValid(value))
             {
-                _name = value;
+                _name = value!;
             }
         }
     }
 
-    private static double ValidateSide(double length)
+    private static double ValidateSide(double? length)
     {
-        return length >= 0.0 ? length : 1.0;
+        return length.HasValue && length.Value >= 0.0 ? length.Value : 1.0;
     }
 
-    private static bool NameIsValid(string name)
+    private static bool NameIsValid(string? name)
     {
         return !string.IsNullOrWhiteSpace(name) && name.Length == 3;
     }
