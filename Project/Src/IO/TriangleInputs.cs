@@ -8,17 +8,26 @@ static class TriangleInputs
     {
         Console.Write("Nome: ");
         string? name = Console.ReadLine();
-        Console.Write("Lado 1: ");
-        string? s1StringValue = Console.ReadLine();
-        Console.Write("Lado 2: ");
-        string? s2StringValue = Console.ReadLine();
-        Console.Write("Lado 3: ");
-        string? s3StringValue = Console.ReadLine();
+        
+        while (!Triangle.NameIsValid(name))
+        {
+            Console.Write("  ¬ Erro. O nome deve ter três caracteres. Digite novamente: ");
+            name = Console.ReadLine();
+        }
 
-        double? s1 = ParsingUtils.ParseDoubleOrNull(s1StringValue);
-        double? s2 = ParsingUtils.ParseDoubleOrNull(s2StringValue);
-        double? s3 = ParsingUtils.ParseDoubleOrNull(s3StringValue);
-        Triangle t = new(name, s1, s2, s3);
+        string[] nameSides = Triangle.ExtractNameSides(name!.ToUpper());
+        string?[] sideLengths = new string[3];
+        
+        for (int i = 0; i < 3; i++)
+        {
+            Console.Write($"Lado {nameSides[i]}: ");
+            sideLengths[i] = Console.ReadLine();
+        }
+
+        double? s1 = ParsingUtils.ParseDoubleOrNull(sideLengths[0]);
+        double? s2 = ParsingUtils.ParseDoubleOrNull(sideLengths[1]);
+        double? s3 = ParsingUtils.ParseDoubleOrNull(sideLengths[2]);
+        Triangle t = new(name!.ToUpper(), s1, s2, s3);
 
         return t;
     }
