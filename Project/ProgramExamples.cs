@@ -46,6 +46,13 @@ static class ProgramExamples
         Console.WriteLine();
         Console.WriteLine("Entre com os dados do triângulo:");
         string? name = Console.ReadLine();
+        
+        while (!Triangle.NameIsValid(name))
+        {
+            Console.Write("  ¬ Erro. O nome deve ter três caracteres. Digite novamente: ");
+            name = Console.ReadLine();
+        }
+        
         string? s1StringValue = Console.ReadLine();
         string? s2StringValue = Console.ReadLine();
         string? s3StringValue = Console.ReadLine();
@@ -77,7 +84,17 @@ static class ProgramExamples
 
         Console.WriteLine();
         Console.Write("Entre com um novo nome para o triângulo: ");
-        t.Name = Console.ReadLine();
+        string? name = Console.ReadLine();
+        
+        while (!Triangle.NameIsValid(name) || string.Equals(t.Name, name!.ToUpper()))
+        {
+            Console.Write(
+                "  ¬ Erro. O nome deve ter três caracteres e ser diferente do atual. Digite novamente: "
+            );
+            name = Console.ReadLine();
+        }
+        
+        t.Name = name;
         Console.WriteLine(t.ToString());
 
         OutgoingMessage();
