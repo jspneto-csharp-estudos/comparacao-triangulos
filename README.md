@@ -68,6 +68,7 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 - **Estrutural:**
   - [**v0.2.1**][3] — Separa IO e utils e limpa o entrypoint
   - [**v0.6.1**][8] — Aplica auto-properties em Triangle
+  - [**v0.7.1**][10] — Separa validação de nome entre construtor e setter
 
 ## Objetivo Educacional
 
@@ -82,3 +83,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [7]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.6/Project "v0.6"
 [8]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.6.1/Project "v0.6.1"
 [9]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.7/Project "v0.7"
+[10]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.7.1/Project "v0.7.1"
