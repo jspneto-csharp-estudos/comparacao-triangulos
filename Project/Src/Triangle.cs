@@ -11,7 +11,6 @@ class Triangle
 
     public Triangle(string name, double s1, double s2, double s3)
     {
-        _name = ValidateName(name);
         S1 = ValidateSide(s1);
         S2 = ValidateSide(s2);
         S3 = ValidateSide(s3);
@@ -21,6 +20,15 @@ class Triangle
             S1 = 3.0;
             S2 = 4.0;
             S3 = 5.0;
+        }
+
+        if (NameIsValid(name))
+        {
+            _name = name;
+        }
+        else
+        {
+            _name = "ABC";
         }
     }
 
@@ -35,19 +43,10 @@ class Triangle
 
         set
         {
-            _name = ValidateName(value);
-        }
-    }
-
-    private static string ValidateName(string name)
-    {
-        if (name != null && name.Length == 3)
-        {
-            return name;
-        }
-        else
-        {
-            return "ABC";
+            if (NameIsValid(value))
+            {
+                _name = value;
+            }
         }
     }
 
@@ -60,6 +59,18 @@ class Triangle
         else
         {
             return 1.0;
+        }
+    }
+
+    private static bool NameIsValid(string name)
+    {
+        if (name != null && name.Length == 3)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
