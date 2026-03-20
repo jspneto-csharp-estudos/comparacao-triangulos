@@ -16,25 +16,26 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.7.2
-- **Conceito aplicado:** Refatoração de Código
+- **Versão**: 0.8
+- **Conceito aplicado:** Tipos Anuláveis
 
 ## Descrição da Versão
 
 ```bash
 
-Refatoracao dos metodos de verificacao e validacao.
+Introduz suporte a tipos anulaveis no fluxo de entrada
+da aplicacao.
 
-Todos os metodos que utilizavam controle de fluxo para
-verificar propriedades ou validar atributos foram
-atualizados para usar operadores ternarios ou
-retornar diretamente o resultado da operacao logica.
+O metodo CreateTriangle passa a aceitar entradas vazias
+do usuario, convertendo-as para valores nulos por meio
+do metodo ParseDoubleOrNull.
 
-Um nome que seja apenas uma sequencia de tres espacos
-em branco passa a ser considerado invalido.
+Os valores nulos sao tratados pelo construtor da classe
+Triangle, que aplica validacao e valores padrao para
+garantir a consistencia do objeto.
 
-O construtor de Triangle passa a usar um operador
-ternario para aplicar um nome valido.
+Essa versao consolida o uso de nullable types no projeto
+antes da introducao de composicao entre objetos.
 
 ```
 
