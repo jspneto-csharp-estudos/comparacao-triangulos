@@ -11,6 +11,7 @@ class Triangle
 
     public Triangle(string name, double s1, double s2, double s3)
     {
+        _name = NameIsValid(name) ? name : "ABC";
         S1 = ValidateSide(s1);
         S2 = ValidateSide(s2);
         S3 = ValidateSide(s3);
@@ -20,16 +21,7 @@ class Triangle
             S1 = 3.0;
             S2 = 4.0;
             S3 = 5.0;
-        }
-
-        if (NameIsValid(name))
-        {
-            _name = name;
-        }
-        else
-        {
-            _name = "ABC";
-        }
+        }        
     }
 
     public Triangle(string name) : this(name, 3.0, 4.0, 5.0) {}
@@ -52,38 +44,17 @@ class Triangle
 
     private static double ValidateSide(double length)
     {
-        if (length >= 0.0)
-        {
-            return length;
-        }
-        else
-        {
-            return 1.0;
-        }
+        return length >= 0.0 ? length : 1.0;
     }
 
     private static bool NameIsValid(string name)
     {
-        if (name != null && name.Length == 3)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return !string.IsNullOrWhiteSpace(name) && name.Length == 3;
     }
 
     private static bool TriangleInequality(double s1, double s2, double s3)
     {
-        if (s1 < s2 + s3 && s2 < s1 + s3 && s3 < s1 + s2)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return s1 < s2 + s3 && s2 < s1 + s3 && s3 < s1 + s2;
     }
 
     public double Area()
