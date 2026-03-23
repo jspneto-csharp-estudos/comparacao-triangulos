@@ -16,26 +16,44 @@ area = RaizQ(p * (p - S1) * (p - S2) * (p - S3))
 
 ## Detalhes Gerais
 
-- **Versão**: 0.8
-- **Conceito aplicado:** Tipos Anuláveis
+- **Versão**: 0.9
+- **Conceito aplicado:** Composição
 
 ## Descrição da Versão
 
 ```bash
 
-Introduz suporte a tipos anulaveis no fluxo de entrada
-da aplicacao.
+Introduz modelagem dos lados do triangulo
+por meio de composicao entre objetos.
 
-O metodo CreateTriangle passa a aceitar entradas vazias
-do usuario, convertendo-as para valores nulos por meio
-do metodo ParseDoubleOrNull.
+Foi criada a classe Segment, responsavel
+por representar um lado do triangulo com
+nome e comprimento validados.
 
-Os valores nulos sao tratados pelo construtor da classe
-Triangle, que aplica validacao e valores padrao para
-garantir a consistencia do objeto.
+A classe Triangle passa a compor tres
+instancias de Segment, substituindo as
+propriedades primitivas anteriormente usadas
+para representar os lados.
 
-Essa versao consolida o uso de nullable types no projeto
-antes da introducao de composicao entre objetos.
+O construtor e o setter de Name foram
+adaptados para garantir consistencia entre
+o nome do triangulo e os nomes dos segmentos,
+recriando os lados sempre que o nome muda.
+
+O metodo CreateTriangle foi atualizado
+para validar o nome antes da construcao
+do objeto e coletar as medidas dos lados
+como strings, delegando a conversao para
+um metodo auxiliar que suporta valores
+nulos.
+
+O exemplo de encapsulamento foi atualizado
+para utilizar a nova representacao em texto
+dos lados do triangulo.
+
+Essa versao consolida o uso de composicao
+no projeto e prepara o modelo para futuras
+evolucoes do dominio geometrico.
 
 ```
 
