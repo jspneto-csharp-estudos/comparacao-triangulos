@@ -6,7 +6,7 @@ Este projeto foi desenvolvido de forma incremental, registrando a evolução do 
 
 ## Conceitos Trabalhados
 
-< `lista de conceitos aplicados até a versão mais atual` >
+- Implementação procedural
 
 ## Enunciado
 
@@ -30,8 +30,10 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 
 ## Evolução
 
-< `lista de links para todas as versões do projeto` >
+- [**v0.0.1**][1] — Implementação procedural da comparação das áreas de triângulos
 
 ## Objetivo Educacional
 
 Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
+
+[1]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.0.1/Project "v0.0.1"
