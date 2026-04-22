@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        string ProjectName = "Projeto de Estudo em C#";
+        string ProjectName = "Comparação das Áreas de Dois Triângulos";
         
         while (true)
         {
