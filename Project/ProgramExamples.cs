@@ -37,6 +37,11 @@ class ProgramExamples
             Console.WriteLine("Y");
         }
 
+        ShowExitPrompt();
+    }
+
+    private static void ShowExitPrompt()
+    {
         Console.WriteLine();
         Console.Write("Pressione qualquer tecla para continuar...");
         Console.ReadKey();
