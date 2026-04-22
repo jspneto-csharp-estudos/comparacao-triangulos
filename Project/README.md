@@ -32,14 +32,21 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 
 # Detalhes Gerais
 
-- **Versão:** < `número da versão` >
-- **Conceito aplicado:** < `nome do conceito` >
+- **Versão:** 0.0.1
+- **Conceito aplicado:** Solução Procedural
 
 # Descrição da Versão
 
 ```bash
 
-< descrição resumida da versão >
+Primeira resolucao funcional do problema
+em abordagem procedural.
+
+A solucao realiza a leitura dos lados de
+dois triangulos, calcula as areas pela
+formula de Heron e informa qual possui a
+maior area, mantendo a estrutura base do
+template ja existente no projeto.
 
 ```
 
