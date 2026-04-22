@@ -1,6 +1,18 @@
-# < nome completo do projeto >
+# Comparação das Áreas de Dois Triângulos
 
-< `enunciado do projeto` >
+Ler as medidas dos lados de dois triângulos (X e Y), considerando medidas válidas.
+
+Em seguida:
+- Calcular a área de cada triângulo
+- Exibir os valores das áreas
+- Informar qual triângulo possui a maior área
+
+A área de um triângulo com lados `a`, `b` e `c` é calculada pela **fórmula de Heron**:
+
+```bash
+p = (a + b + c) / 2
+area = RaizQ(p * (p - a) * (p - b) * (p - c))
+```
 
 # Estrutura:
 
