@@ -22,6 +22,8 @@ area = RaizQ(p * (p - Side1) * (p - Side2) * (p - Side3))
    |- Img/
       |- Menu.png
       |- ProblemSolution.png
+   |- Src/
+      |- Triangle.cs
    |- Program.cs
    |- ProgramExamples.cs
    |- Project.csproj
@@ -32,21 +34,21 @@ area = RaizQ(p * (p - Side1) * (p - Side2) * (p - Side3))
 
 # Detalhes Gerais
 
-- **Versão:** 0.0.1
-- **Conceito aplicado:** Solução Procedural
+- **Versão:** 0.1
+- **Conceito aplicado:** Classes e Métodos
 
 # Descrição da Versão
 
 ```bash
 
-Primeira resolucao funcional do problema
-em abordagem procedural.
+Evolucao da solucao procedural para uma
+abordagem orientada a objetos.
 
-A solucao realiza a leitura dos lados de
-dois triangulos, calcula as areas pela
-formula de Heron e informa qual possui a
-maior area, mantendo a estrutura base do
-template ja existente no projeto.
+A implementacao introduz a classe Triangle,
+responsavel por armazenar os lados e calcular
+a area com a formula de Heron, alem de adaptar
+a rotina principal para utilizar objetos na
+comparacao entre os triangulos.
 
 ```
 
