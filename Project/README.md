@@ -23,6 +23,11 @@ area = RaizQ(p * (p - Side1) * (p - Side2) * (p - Side3))
       |- Menu.png
       |- ProblemSolution.png
    |- Src/
+      |- IO/
+         |- TriangleInputs.cs
+         |- TriangleOutputs.cs
+      |- Utils/
+         |- TriangleCompare.cs
       |- Triangle.cs
    |- Program.cs
    |- ProgramExamples.cs
@@ -34,21 +39,22 @@ area = RaizQ(p * (p - Side1) * (p - Side2) * (p - Side3))
 
 # Detalhes Gerais
 
-- **Versão:** 0.1
-- **Conceito aplicado:** Classes e Métodos
+- **Versão:** 0.1.1
+- **Conceito aplicado:** Refatoração de Código
 
 # Descrição da Versão
 
 ```bash
 
-Evolucao da solucao procedural para uma
-abordagem orientada a objetos.
+Refatoracao da versao orientada a objetos
+para distribuir melhor as responsabilidades
+da solucao.
 
-A implementacao introduz a classe Triangle,
-responsavel por armazenar os lados e calcular
-a area com a formula de Heron, alem de adaptar
-a rotina principal para utilizar objetos na
-comparacao entre os triangulos.
+A leitura dos dados, a exibicao das areas e
+a comparacao entre triangulos foram extraidas
+para classes especificas, deixando o fluxo do
+programa principal mais limpo e preparando a
+estrutura para evolucoes futuras no projeto.
 
 ```
 
