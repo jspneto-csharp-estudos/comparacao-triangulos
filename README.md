@@ -34,6 +34,9 @@ area = RaizQ(p * (p - Side1) * (p - Side2) * (p - Side3))
 - **Conceitual:**
   - [**v0.1**][2] — Classe Triangle com cálculo de área e integracao na solução
 
+- **Estrutural:**
+  - [**v0.1.1**][3] — Separação de responsabilidades com classes de entrada, saída e apoio
+
 - **Inicial:**
   - [**v0.0.1**][1] — Implementação procedural da comparação das áreas de triângulos
 
@@ -43,3 +46,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 
 [1]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.0.1/Project "v0.0.1"
 [2]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.1/Project "v0.1"
+[3]: https://github.com/jspneto-csharp-estudos/comparacao-triangulos/tree/v0.1.1/Project "v0.1.1"
